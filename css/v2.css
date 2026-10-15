@@ -26,7 +26,7 @@
 .h7__title{margin:0;order:0}
 .h7__word{display:block;font:500 clamp(54px,17vw,120px)/.92 var(--serif);color:#f6ead2;letter-spacing:-.01em}
 .h7__sub{display:block;font:600 12px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:14px}
-.h7__photo{order:1;border-radius:18px;overflow:hidden;aspect-ratio:4/3;border:1px solid rgba(201,169,110,.3)}
+.h7__photo{order:1;position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;border:1px solid rgba(201,169,110,.3)}
 .h7__img{width:100%;height:100%;object-fit:cover}
 .h7__bottom{order:2;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
 .h7__line{margin:0;font-size:17px;color:#e2d9cb;max-width:36em}
@@ -34,6 +34,7 @@
   .h7{padding:0}
   .h7__frame{position:relative;width:min(1280px,100%);height:clamp(560px,calc(100svh - var(--hh) - 40px),800px);display:block;overflow:hidden}
   .h7__photo{position:absolute;inset:0;border:0;border-radius:0;aspect-ratio:auto}
+  .h7__photo .cap{left:auto;right:24px;bottom:auto;top:20px}
   .h7__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.25) 45%,rgba(0,0,0,.86) 100%)}
   .h7__img{object-position:50% var(--py,50%);transition:object-position .6s ease-out}
   .h7__title{position:absolute;left:0;right:0;top:50%;transform:translateY(-58%);text-align:center;padding:0 24px}
